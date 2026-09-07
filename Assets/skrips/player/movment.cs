@@ -1,18 +1,24 @@
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class movment : MonoBehaviour
 {
+    // movent
     private PlayerInputActions inputActions;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private GameObject camara;
 
-    
-    
+    // UI och player stats
+    [SerializeField] private float health = 100f;
+    [SerializeField] private GameObject healthBar;
+    private Vector3 healthBarPos;
 
     private void Awake()
     {
         inputActions = new PlayerInputActions();
+       healthBarPos = healthBar.transform.position;
+
     }
 
     private void OnEnable()
@@ -47,12 +53,15 @@ public class movment : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, angle - 90);
 
 
-
-
-        
-
         camara.transform.position = new Vector3 (gameObject.transform.position.x,gameObject.transform.position.y,-10f);
-
+        // gör att kamramran inte snrar
         camara.transform.rotation = Quaternion.identity;
+
+
+        healthBar.TryGetComponent<RectTransform>(out RectTransform rectTransform);
+
+        rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, health * 5f);
+        healthBar.transform.position = healthBarPos + new Vector3( -250f + health * 2.5f, 0f, 0f);
+
     }
 }
