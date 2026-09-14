@@ -9,7 +9,7 @@ public class movment : MonoBehaviour
     [SerializeField] private GameObject camara;
 
     // UI och player stats
-    [SerializeField] private float health = 100f;
+    [SerializeField] public float health = 100f;
     [SerializeField] private GameObject healthBar;
     private Vector3 healthBarPos;
 
