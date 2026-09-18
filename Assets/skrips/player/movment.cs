@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class movment : MonoBehaviour
 {
     // movent
-    private PlayerInputActions inputActions;
+    public PlayerInputActions inputActions;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private GameObject camara;
 
