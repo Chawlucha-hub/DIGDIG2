@@ -618,7 +618,7 @@ MonoBehaviour:
   notEnemy:
     serializedVersion: 2
     m_Bits: 183
-  attackRange: 2
+  attackRange: 2.5
   momentSped: 2
   damage: 20
 --- !u!61 &550956641
