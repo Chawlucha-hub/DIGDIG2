@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 456340436}
   - component: {fileID: 456340437}
   - component: {fileID: 456340438}
+  - component: {fileID: 456340439}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -366,6 +367,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &456340439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456340433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ff8039b2ab4a6458bb52e81b9b9e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::playeratakskript
+  damage: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
