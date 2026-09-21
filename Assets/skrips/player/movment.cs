@@ -64,6 +64,34 @@ public class movment : MonoBehaviour
 
         rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, health * 5f);
         healthBar.transform.position = healthBarPos + new Vector3(-250f + health * 2.5f, 0f, 0f);
+
+
+        // attacker kontroler
+        if (inputActions.Player.magiskeatakr.triggered)
+        {
+            float magikattack = inputActions.Player.magiskeatakr.ReadValue<float>();
+
+            if (magikattack < 0)
+            {
+                Debug.Log("Q trycktes!");
+            }
+
+            if (magikattack > 0)
+            {
+                Debug.Log("E trycktes!");
+            }
+        }
+
+
+        if (inputActions.Player.Attack.triggered)
+        {
+            playeratakskript.Attack();
+        }
+        if (inputActions.Player.block.triggered)
+        {
+
+            Debug.Log("block");
+        }
     }
 
     private void FixedUpdate()
