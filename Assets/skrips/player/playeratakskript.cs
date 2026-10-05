@@ -10,9 +10,15 @@ public class playeratakskript : MonoBehaviour
     public static Vector2 curentPos;
     public static Vector2 playerDirection;
 
-    [SerializeField] public static LayerMask finede;
+    [SerializeField] public  LayerMask finede;
+    private static LayerMask enemyLayer;
 
     public static List<GameObject> fiender = new List<GameObject>();
+
+    private void Awake()
+    {
+        enemyLayer = finede;
+    }
 
     private void Update()
     {
@@ -29,12 +35,14 @@ public class playeratakskript : MonoBehaviour
         Collider2D[] hits = Physics2D.OverlapCircleAll(
             curentPos,
             attackRadius,
-            finede
+            enemyLayer
         );
 
         foreach (Collider2D hit in hits)
         {
             GameObject fiende = hit.gameObject;
+
+            Debug.Log("hit " + fiende);
 
             Vector2 riktningTillFiende =
                 ((Vector2)fiende.transform.position - curentPos).normalized;
@@ -49,9 +57,21 @@ public class playeratakskript : MonoBehaviour
                 fiender.Add(fiende);
             }
         }
-        for(int i = 0; i < fiender.Count; i++)
+        
+        
+        for (int i = 0; i < fiender.Count; i++)
         {
-            fiender[i].GetComponent<FiendeAi>().health -= damage;
+            FiendeAi fiendeAi = fiender[i].GetComponent<FiendeAi>();
+
+            if (fiendeAi != null)
+            {
+                fiendeAi.health -= damage;
+            }
+            else
+            {
+                Debug.LogError("Fienden saknar FiendeAi: " + fiender[i].name);
+            }
         }
+        
     }
 }

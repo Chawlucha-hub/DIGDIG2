@@ -379,7 +379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ff8039b2ab4a6458bb52e81b9b9e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playeratakskript
-  damage: 10
+  finede:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +637,7 @@ MonoBehaviour:
   attackRange: 2.5
   momentSped: 2
   damage: 20
+  health: 100
 --- !u!61 &550956641
 BoxCollider2D:
   m_ObjectHideFlags: 0
