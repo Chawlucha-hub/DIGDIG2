@@ -9,6 +9,7 @@ public class FiendeAi : MonoBehaviour
     [SerializeField] private float attackRange = 2.5f;
     [SerializeField] private int momentSped = 2;
     [SerializeField] private float damage = 20f;
+    [SerializeField] public float health = 100f;
 
     private bool conterstated = false;
     private bool rethtplayer = false;
@@ -22,7 +23,10 @@ public class FiendeAi : MonoBehaviour
 
     void Update()
     {
-       
+       if (health<= 0f)
+        {
+            gameObject.SetActive(false);
+        }
 
         // Kollar allt inom cirkeln runt fienden
         Collider2D hit = Physics2D.OverlapCircle(transform.position, circleRadius, Player);
