@@ -87,10 +87,13 @@ public class movment : MonoBehaviour
         {
             playeratakskript.Attack();
         }
-        if (inputActions.Player.block.triggered)
+        if (inputActions.Player.block.IsPressed())
         {
-
-            Debug.Log("block");
+            playeratakskript.Block();
+        }
+        else
+        {
+            playeratakskript.isBlocing = false;
         }
     }
 

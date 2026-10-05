@@ -9,6 +9,7 @@ public class playeratakskript : MonoBehaviour
     public static float attackRadius = 2;
     public static Vector2 curentPos;
     public static Vector2 playerDirection;
+    public static bool isBlocing = false;
 
     [SerializeField] public  LayerMask finede;
     private static LayerMask enemyLayer;
@@ -74,4 +75,11 @@ public class playeratakskript : MonoBehaviour
         }
         
     }
-}
+    public static void Block()
+    {
+        isBlocing = true;
+
+
+    }
+ 
+} 
