@@ -43,7 +43,7 @@ public class FiendeAi : MonoBehaviour
 
                 RaycastHit2D hit2D = Physics2D.Raycast(gameObject.transform.position, playerDir, distanceToPlayer, notEnemy);
 
-                if (hit2D != null && hit2D.collider.name == "Player")
+                if (hit2D.collider.name == "Player")
                 {
                     if ((rethtplayer == true) && (distanceToPlayer <= attackRange))
                     {
