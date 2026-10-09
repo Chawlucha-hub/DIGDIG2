@@ -10,8 +10,9 @@ public class playeratakskript : MonoBehaviour
     public static Vector2 curentPos;
     public static Vector2 playerDirection;
     public static bool isBlocing = false;
-
-    [SerializeField] public  LayerMask finede;
+    
+    
+    [SerializeField] public LayerMask finede;
     private static LayerMask enemyLayer;
 
     public static List<GameObject> fiender = new List<GameObject>();
@@ -58,8 +59,8 @@ public class playeratakskript : MonoBehaviour
                 fiender.Add(fiende);
             }
         }
-        
-        
+
+
         for (int i = 0; i < fiender.Count; i++)
         {
             FiendeAi fiendeAi = fiender[i].GetComponent<FiendeAi>();
@@ -73,13 +74,29 @@ public class playeratakskript : MonoBehaviour
                 Debug.LogError("Fienden saknar FiendeAi: " + fiender[i].name);
             }
         }
-        
+
     }
-    public static void Block()
+    
+
+    public static void attackDeDisider(float damage, GameObject fiende, GameObject player)
     {
-        isBlocing = true;
-
-
+        if(isBlocing == true)
+        {
+            Vector2 riktnigTillSlag = (curentPos - (Vector2)fiende.transform.position).normalized;
+            float vikelAvSlag = Vector2.Angle(playerDirection, riktnigTillSlag);
+            if (vikelAvSlag <= 120)
+            {
+                player.GetComponent<movment>().health -= damage;
+            }
+            else
+            {
+                Debug.Log("blokat");
+            }
+        }
+        else
+        {
+            player.GetComponent<movment>().health -= damage;
+        }
+       
     }
- 
-} 
+}

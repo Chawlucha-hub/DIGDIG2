@@ -73,11 +73,15 @@ public class movment : MonoBehaviour
 
             if (magikattack < 0)
             {
+                //fire ball
+                //colldown
                 Debug.Log("Q trycktes!");
             }
 
             if (magikattack > 0)
             {
+                // handgranat
+                // colldown
                 Debug.Log("E trycktes!");
             }
         }
@@ -89,7 +93,7 @@ public class movment : MonoBehaviour
         }
         if (inputActions.Player.block.IsPressed())
         {
-            playeratakskript.Block();
+            playeratakskript.isBlocing = true;
         }
         else
         {

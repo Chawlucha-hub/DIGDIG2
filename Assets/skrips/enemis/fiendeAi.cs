@@ -8,7 +8,7 @@ public class FiendeAi : MonoBehaviour
     [SerializeField] private LayerMask notEnemy;
     [SerializeField] private float attackRange = 2.5f;
     [SerializeField] private int momentSped = 2;
-    [SerializeField] private float damage = 20f;
+    [SerializeField] public static float damage = 20f;
     [SerializeField] public float health = 100f;
 
     private bool conterstated = false;
@@ -53,8 +53,10 @@ public class FiendeAi : MonoBehaviour
                             if (conterstated == false)
                             {
                                 conterstated = true;
-                                float playerhelth = player.GetComponent<movment>().health;
-                                player.GetComponent<movment>().health = playerhelth - damage;
+
+                                playeratakskript.attackDeDisider(damage, gameObject, player);
+
+                            
                                 StartCoroutine(ExampleCoroutine());
                             }
                         
@@ -68,8 +70,7 @@ public class FiendeAi : MonoBehaviour
                         if (conterstated == false)
                         {
                             conterstated = true;
-                            float playerhelth = player.GetComponent<movment>().health;
-                            player.GetComponent<movment>().health = playerhelth - damage;
+                            playeratakskript.attackDeDisider(damage, gameObject, player);
                             StartCoroutine(ExampleCoroutine());
                         }
                     }
