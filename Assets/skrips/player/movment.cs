@@ -12,6 +12,10 @@ public class movment : MonoBehaviour
     [SerializeField] public float health = 100f;
     [SerializeField] private GameObject healthBar;
     private Vector3 healthBarPos;
+    
+    //progekttiol
+    [SerializeField] private GameObject progetileOrigen;
+    [SerializeField] private GameObject fireball;
 
     // Fysik
     private Rigidbody2D rb;
@@ -48,7 +52,7 @@ public class movment : MonoBehaviour
         mouseWorldPos.z = 0f;
 
         // Räkna ut riktningen från spelaren till musen
-        Vector2 direction = mouseWorldPos - transform.position;
+         Vector2 direction = mouseWorldPos - transform.position;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
@@ -76,6 +80,7 @@ public class movment : MonoBehaviour
                 //fire ball
                 //colldown
                 Debug.Log("Q trycktes!");
+                Instantiate(fireball, progetileOrigen.transform.position, transform.rotation);
             }
 
             if (magikattack > 0)

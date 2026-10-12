@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,9 @@ public class playeratakskript : MonoBehaviour
     public static Vector2 curentPos;
     public static Vector2 playerDirection;
     public static bool isBlocing = false;
+    public static Vector2 staticplayerdiretion;
+
+    
     
     
     [SerializeField] public LayerMask finede;
@@ -25,7 +29,7 @@ public class playeratakskript : MonoBehaviour
     private void Update()
     {
         curentPos = transform.position;
-        playerDirection = transform.up;
+        playerDirection = transform.up; 
     }
 
     public static void Attack()
@@ -99,4 +103,8 @@ public class playeratakskript : MonoBehaviour
         }
        
     }
+
+        
+       
+    
 }
