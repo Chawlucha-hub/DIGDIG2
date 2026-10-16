@@ -108,6 +108,7 @@ public class movment : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
         // Omvandlar WASD-inputen baserat på vart spelaren pekar!
        
         Vector2 moveDirection = (transform.up * moveInput.y) + (transform.right * moveInput.x);
