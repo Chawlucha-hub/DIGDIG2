@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class playeratakskript : MonoBehaviour
     public static bool isBlocing = false;
     public static Vector2 staticplayerdiretion;
 
+    private static bool conterstarted;
     
     
     
@@ -84,27 +86,37 @@ public class playeratakskript : MonoBehaviour
 
     public static void attackDeDisider(float damage, GameObject fiende, GameObject player)
     {
-        if(isBlocing == true)
+        Animator animator = player.GetComponent<movment>().animator;
+        if (isBlocing == true)
         {
             Vector2 riktnigTillSlag = (curentPos - (Vector2)fiende.transform.position).normalized;
             float vikelAvSlag = Vector2.Angle(playerDirection, riktnigTillSlag);
             if (vikelAvSlag <= 120)
             {
                 player.GetComponent<movment>().health -= damage;
+               playeratakskript.StartCoroutine(ExampleCoroutine(animator));
             }
             else
             {
                 Debug.Log("blokat");
+                animator.SetBool("Blockattak", true);
             }
         }
         else
         {
             player.GetComponent<movment>().health -= damage;
+            animator.SetBool("Blockattak", false);
         }
        
     }
 
-        
-       
-    
+    static IEnumerator ExampleCoroutine(Animator ainmator)
+    {
+
+        yield return new WaitForSeconds(1);
+
+        ainmator.SetBool("Blockattak", false);
+    }
+
+
 }

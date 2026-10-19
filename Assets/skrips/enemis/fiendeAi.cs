@@ -6,7 +6,7 @@ public class FiendeAi : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private LayerMask Player;
     [SerializeField] private LayerMask notEnemy;
-    [SerializeField] private float attackRange = 2.5f;
+    [SerializeField] public float attackRange = 2.5f;
     [SerializeField] private int momentSped = 2;
     [SerializeField] public static float damage = 20f;
     [SerializeField] public float health = 100f;

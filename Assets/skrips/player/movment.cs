@@ -17,6 +17,9 @@ public class movment : MonoBehaviour
     [SerializeField] private GameObject progetileOrigen;
     [SerializeField] private GameObject fireball;
 
+    // animetor
+    [SerializeField] public Animator animator;
+
     // Fysik
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -98,11 +101,15 @@ public class movment : MonoBehaviour
         }
         if (inputActions.Player.block.IsPressed())
         {
+            animator.SetBool("isBlockin", true);
             playeratakskript.isBlocing = true;
         }
         else
         {
+            animator.SetBool("Blockattak", false);
+            animator.SetBool("isBlockin", false);
             playeratakskript.isBlocing = false;
+            
         }
     }
 
@@ -115,6 +122,14 @@ public class movment : MonoBehaviour
 
         // Sätter fysikhastigheten i spelarens lokala riktning
         rb.linearVelocity = moveDirection * moveSpeed;
+        if(rb.linearVelocity.magnitude > 0)
+        {
+            animator.SetBool("går", true);
+        }else
+        {
+            animator.SetBool("går", false);
+        }
+
     }
 }
 
