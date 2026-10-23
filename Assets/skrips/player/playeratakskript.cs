@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class playeratakskript : MonoBehaviour
 {
@@ -13,11 +14,12 @@ public class playeratakskript : MonoBehaviour
     public static Vector2 playerDirection;
     public static bool isBlocing = false;
     public static Vector2 staticplayerdiretion;
+    public static Animator Sanimator;
+    public Animator animator;
+    public static bool slår = false;
+    public static GameObject playerObjekt;
 
-    private static bool conterstarted;
-    
-    
-    
+
     [SerializeField] public LayerMask finede;
     private static LayerMask enemyLayer;
 
@@ -25,13 +27,16 @@ public class playeratakskript : MonoBehaviour
 
     private void Awake()
     {
+        playerObjekt = gameObject;
         enemyLayer = finede;
+        animator = gameObject.GetComponent<movment>().animator;
+        Sanimator = gameObject.GetComponent<movment>().animator;
     }
 
     private void Update()
     {
         curentPos = transform.position;
-        playerDirection = transform.up; 
+        playerDirection = transform.up;
     }
 
     public static void Attack()
@@ -45,6 +50,9 @@ public class playeratakskript : MonoBehaviour
             attackRadius,
             enemyLayer
         );
+
+        slår = true;
+        playerObjekt.GetComponent<playeratakskript>().StartSlagAnimation();
 
         foreach (Collider2D hit in hits)
         {
@@ -86,7 +94,7 @@ public class playeratakskript : MonoBehaviour
 
     public static void attackDeDisider(float damage, GameObject fiende, GameObject player)
     {
-        Animator animator = player.GetComponent<movment>().animator;
+        
         if (isBlocing == true)
         {
             Vector2 riktnigTillSlag = (curentPos - (Vector2)fiende.transform.position).normalized;
@@ -94,29 +102,91 @@ public class playeratakskript : MonoBehaviour
             if (vikelAvSlag <= 120)
             {
                 player.GetComponent<movment>().health -= damage;
-               playeratakskript.StartCoroutine(ExampleCoroutine(animator));
             }
             else
             {
                 Debug.Log("blokat");
-                animator.SetBool("Blockattak", true);
+                player.GetComponent<playeratakskript>().StartaBlockAnimation();
             }
         }
         else
         {
             player.GetComponent<movment>().health -= damage;
-            animator.SetBool("Blockattak", false);
+           Sanimator.SetBool("Blockattak", false);
         }
+
        
     }
 
-    static IEnumerator ExampleCoroutine(Animator ainmator)
+    private Coroutine blockCoroutine;
+
+
+    public void StartaBlockAnimation()
     {
+        if (blockCoroutine != null)
+            return;
 
-        yield return new WaitForSeconds(1);
-
-        ainmator.SetBool("Blockattak", false);
+        blockCoroutine = StartCoroutine(VantaPaAnimation());
     }
 
+    IEnumerator VantaPaAnimation()
+    {
+       
+            animator.SetBool("Blockattak", true);
+
+            // Vänta tills block-state börjar.
+            while (!animator.GetCurrentAnimatorStateInfo(0).IsName("block"))
+                yield return null;
+
+            // Vänta tills animationen spelats klart.
+            while (animator.GetCurrentAnimatorStateInfo(0).IsName("block") &&
+                   animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+                yield return null;
+
+            animator.SetBool("Blockattak", false);
+            blockCoroutine = null;
+
+    }
+
+    private Coroutine slagCoroutine;
+
+    public void StartSlagAnimation()
+    {
+        if (slagCoroutine != null)
+            return;
+
+        slagCoroutine = StartCoroutine(VantaPaSlagAnimation());
+    }
+
+    IEnumerator VantaPaSlagAnimation()
+    {
+        animator.SetBool("attacking", true);
+
+        // Vänta tills Animator har uppdaterat parametern.
+        yield return null;
+
+        // Starta attack-state från början.
+        animator.Play("attacking", 0, 0f);
+
+        // Vänta en bildruta så att Animator hinner byta state.
+        yield return null;
+
+        // Vänta tills state har spelats klart en gång.
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("attacking") &&
+               animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        {
+            yield return null;
+        }
+
+        animator.SetBool("attacking", false);
+
+        slår = false;
+        slagCoroutine = null;
+    }
 
 }
+
+
+
+
+
