@@ -37,6 +37,7 @@ public class playeratakskript : MonoBehaviour
     {
         curentPos = transform.position;
         playerDirection = transform.up;
+        
     }
 
     public static void Attack()
@@ -53,6 +54,7 @@ public class playeratakskript : MonoBehaviour
 
         slår = true;
         playerObjekt.GetComponent<playeratakskript>().StartSlagAnimation();
+        
 
         foreach (Collider2D hit in hits)
         {
@@ -160,7 +162,10 @@ public class playeratakskript : MonoBehaviour
 
     IEnumerator VantaPaSlagAnimation()
     {
+        
         animator.SetBool("attacking", true);
+        
+
 
         // Vänta tills Animator har uppdaterat parametern.
         yield return null;
@@ -182,6 +187,7 @@ public class playeratakskript : MonoBehaviour
 
         slår = false;
         slagCoroutine = null;
+        playerObjekt.GetComponent<movment>().slag = false;
     }
 
 }

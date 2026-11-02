@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,8 @@ public class movment : MonoBehaviour
     public PlayerInputActions inputActions;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private GameObject camara;
+    [SerializeField] public bool slag = false;
+    
 
     // UI och player stats
     [SerializeField] public float health = 100f;
@@ -97,7 +100,8 @@ public class movment : MonoBehaviour
 
         if (inputActions.Player.Attack.triggered)
         {
-            playeratakskript.Attack();
+            slag = true;
+            
         }
         if (inputActions.Player.block.IsPressed())
         {
@@ -116,20 +120,34 @@ public class movment : MonoBehaviour
     private void FixedUpdate()
     {
         
-        // Omvandlar WASD-inputen baserat på vart spelaren pekar!
-       
-        Vector2 moveDirection = (transform.up * moveInput.y) + (transform.right * moveInput.x);
+        
+            // Omvandlar WASD-inputen baserat på vart spelaren pekar!
 
-        // Sätter fysikhastigheten i spelarens lokala riktning
-        rb.linearVelocity = moveDirection * moveSpeed;
-        if(rb.linearVelocity.magnitude > 0)
+            Vector2 moveDirection = (transform.up * moveInput.y) + (transform.right * moveInput.x);
+
+            // Sätter fysikhastigheten i spelarens lokala riktning
+            rb.linearVelocity = moveDirection * moveSpeed;
+            
+            
+            if (slag != true)
+            {
+            if (rb.linearVelocity.magnitude > 0)
+            {
+                animator.SetBool("går", true);
+            }
+            else
+            {
+                animator.SetBool("går", false);
+            }
+            }
+        else
         {
-            animator.SetBool("går", true);
-        }else
-        {
-            animator.SetBool("går", false);
+            playeratakskript.Attack();
         }
-
+            
+            
+       
+        
     }
 }
 
