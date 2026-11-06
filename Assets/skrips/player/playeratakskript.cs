@@ -42,6 +42,7 @@ public class playeratakskript : MonoBehaviour
 
     public static void Attack()
     {
+        if (slår == false) { 
         Debug.Log("attack");
 
         fiender.Clear();
@@ -54,25 +55,26 @@ public class playeratakskript : MonoBehaviour
 
         slår = true;
         playerObjekt.GetComponent<playeratakskript>().StartSlagAnimation();
-        
 
-        foreach (Collider2D hit in hits)
-        {
-            GameObject fiende = hit.gameObject;
 
-            Debug.Log("hit " + fiende);
-
-            Vector2 riktningTillFiende =
-                ((Vector2)fiende.transform.position - curentPos).normalized;
-
-            float vinkel = Vector2.Angle(
-                playerDirection,
-                riktningTillFiende
-            );
-
-            if (vinkel <= 60f)
+            foreach (Collider2D hit in hits)
             {
-                fiender.Add(fiende);
+                GameObject fiende = hit.gameObject;
+
+                Debug.Log("hit " + fiende);
+
+                Vector2 riktningTillFiende =
+                    ((Vector2)fiende.transform.position - curentPos).normalized;
+
+                float vinkel = Vector2.Angle(
+                    playerDirection,
+                    riktningTillFiende
+                );
+
+                if (vinkel <= 60f)
+                {
+                    fiender.Add(fiende);
+                }
             }
         }
 
@@ -90,6 +92,13 @@ public class playeratakskript : MonoBehaviour
                 Debug.LogError("Fienden saknar FiendeAi: " + fiender[i].name);
             }
         }
+
+    }
+
+    public static void magickattak()
+    {
+        Sanimator.SetBool("går", false);
+        playerObjekt.GetComponent<playeratakskript>().StartKastAnimation();
 
     }
     
@@ -163,7 +172,7 @@ public class playeratakskript : MonoBehaviour
     IEnumerator VantaPaSlagAnimation()
     {
         
-        animator.SetBool("attacking", true);
+        //animator.SetBool("attacking", true);
         
 
 
@@ -171,23 +180,69 @@ public class playeratakskript : MonoBehaviour
         yield return null;
 
         // Starta attack-state från början.
-        animator.Play("attacking", 0, 0f);
+        animator.Play("attack", 0, 0f);
 
         // Vänta en bildruta så att Animator hinner byta state.
         yield return null;
 
-        // Vänta tills state har spelats klart en gång.
-        while (animator.GetCurrentAnimatorStateInfo(0).IsName("attacking") &&
-               animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("attack"))
         {
             yield return null;
         }
 
-        animator.SetBool("attacking", false);
+        // Vänta tills attackanimationen är färdig
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        {
+            yield return null;
+        }
+
+        //animator.SetBool("attacking", false);
 
         slår = false;
         slagCoroutine = null;
         playerObjekt.GetComponent<movment>().slag = false;
+    }
+    private Coroutine kastCoroutine;
+    public void StartKastAnimation()
+    {
+        if (kastCoroutine != null)
+            return;
+
+        kastCoroutine = StartCoroutine(VantaPaKastAnimation());
+    }
+
+
+
+    IEnumerator VantaPaKastAnimation()
+    {
+
+
+
+
+        
+        yield return null;
+
+        animator.Play("kast", 0, 0f);
+
+       
+        yield return null;
+
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("kast"))
+        {
+            yield return null;
+        }
+
+        
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        {
+            yield return null;
+        }
+
+
+        kastCoroutine = null;
+
+
+
     }
 
 }

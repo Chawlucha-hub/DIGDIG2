@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -43,6 +44,8 @@ public class movment : MonoBehaviour
     {
         inputActions.Disable();
     }
+    
+
 
     private void Update()
     {
@@ -83,25 +86,26 @@ public class movment : MonoBehaviour
 
             if (magikattack < 0)
             {
-                //fire ball
+                //magick
                 //colldown
                 Debug.Log("Q trycktes!");
+                playeratakskript.magickattak();
                 Instantiate(fireball, progetileOrigen.transform.position, transform.rotation);
             }
 
             if (magikattack > 0)
             {
-                // handgranat
+                // faierbal
                 // colldown
                 Debug.Log("E trycktes!");
             }
         }
 
 
-        if (inputActions.Player.Attack.triggered)
+        if (inputActions.Player.Attack.triggered && (inputActions.Player.block.IsPressed() == false))
         {
             slag = true;
-            
+            playeratakskript.Attack();
         }
         if (inputActions.Player.block.IsPressed())
         {
@@ -142,7 +146,10 @@ public class movment : MonoBehaviour
             }
         else
         {
-            playeratakskript.Attack();
+            animator.SetBool("går", false);
+            //animator.Play("attack", 0, 0f);
+            animator.Update(0f);
+            
         }
             
             
