@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -45,8 +46,8 @@ public class movment : MonoBehaviour
         inputActions.Disable();
     }
     
-
-
+    
+   
     private void Update()
     {
         // WADS movent (Sparar värdet för FixedUpdate)
@@ -80,7 +81,7 @@ public class movment : MonoBehaviour
 
 
         // attacker kontroler
-        if (inputActions.Player.magiskeatakr.triggered)
+        if (inputActions.Player.magiskeatakr.triggered && (inputActions.Player.block.IsPressed() == false))
         {
             float magikattack = inputActions.Player.magiskeatakr.ReadValue<float>();
 
@@ -89,8 +90,8 @@ public class movment : MonoBehaviour
                 //magick
                 //colldown
                 Debug.Log("Q trycktes!");
-                playeratakskript.magickattak();
-                Instantiate(fireball, progetileOrigen.transform.position, transform.rotation);
+                //animator.Play("kasta", 0, 0f);
+                playeratakskript.magickattak(fireball, progetileOrigen);
             }
 
             if (magikattack > 0)
@@ -100,7 +101,7 @@ public class movment : MonoBehaviour
                 Debug.Log("E trycktes!");
             }
         }
-
+        
 
         if (inputActions.Player.Attack.triggered && (inputActions.Player.block.IsPressed() == false))
         {

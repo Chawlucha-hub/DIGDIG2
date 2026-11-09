@@ -95,10 +95,10 @@ public class playeratakskript : MonoBehaviour
 
     }
 
-    public static void magickattak()
+    public static void magickattak(GameObject magikball, GameObject Origen)
     {
         Sanimator.SetBool("går", false);
-        playerObjekt.GetComponent<playeratakskript>().StartKastAnimation();
+        playerObjekt.GetComponent<playeratakskript>().StartKastAnimation(magikball, Origen);
 
     }
     
@@ -203,36 +203,32 @@ public class playeratakskript : MonoBehaviour
         playerObjekt.GetComponent<movment>().slag = false;
     }
     private Coroutine kastCoroutine;
-    public void StartKastAnimation()
+    public void StartKastAnimation(GameObject magikball, GameObject Origen)
     {
         if (kastCoroutine != null)
             return;
 
-        kastCoroutine = StartCoroutine(VantaPaKastAnimation());
+        kastCoroutine = StartCoroutine(VantaPaKastAnimation(magikball,Origen));
     }
 
 
 
-    IEnumerator VantaPaKastAnimation()
+    IEnumerator VantaPaKastAnimation(GameObject magikball, GameObject Origen)
     {
+        Debug.Log("kasta");
+        yield return null;
+        animator.Play("kasta", 0, 0f);
 
-
-
-
+        yield return null;
         
-        yield return null;
 
-        animator.Play("kast", 0, 0f);
-
-       
-        yield return null;
-
-        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("kast"))
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("kasta"))
         {
             yield return null;
         }
+        Instantiate(magikball, Origen.transform.position, transform.rotation);
 
-        
+
         while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
         {
             yield return null;
@@ -240,9 +236,6 @@ public class playeratakskript : MonoBehaviour
 
 
         kastCoroutine = null;
-
-
-
     }
 
 }
