@@ -20,7 +20,9 @@ public class movment : MonoBehaviour
     
     //progekttiol
     [SerializeField] private GameObject progetileOrigen;
+    [SerializeField] private GameObject Magicball;
     [SerializeField] private GameObject fireball;
+
 
     // animetor
     [SerializeField] public Animator animator;
@@ -91,7 +93,7 @@ public class movment : MonoBehaviour
                 //colldown
                 Debug.Log("Q trycktes!");
                 //animator.Play("kasta", 0, 0f);
-                playeratakskript.magickattak(fireball, progetileOrigen);
+                playeratakskript.magickattak(Magicball, progetileOrigen);
             }
 
             if (magikattack > 0)
@@ -99,6 +101,7 @@ public class movment : MonoBehaviour
                 // faierbal
                 // colldown
                 Debug.Log("E trycktes!");
+                playeratakskript.fireBallattak(fireball,progetileOrigen);
             }
         }
         

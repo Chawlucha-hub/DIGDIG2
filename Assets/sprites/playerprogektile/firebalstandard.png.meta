@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 27c2ad6282fc398458f07e4fdd6c999e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4108031258863209694
+    second: spell_sprite_sheet_0
+  - first:
+      213: -8134507985932087382
+    second: spell_sprite_sheet_1
+  - first:
+      213: -3188021956528554412
+    second: spell_sprite_sheet_2
+  - first:
+      213: -4549235383687268199
+    second: spell_sprite_sheet_3
+  - first:
+      213: 6400120251201409182
+    second: spell_sprite_sheet_4
+  - first:
+      213: 1484071302942603704
+    second: spell_sprite_sheet_5
+  - first:
+      213: -7384712595899108209
+    second: spell_sprite_sheet_6
+  - first:
+      213: 5847084607363727513
+    second: spell_sprite_sheet_7
+  - first:
+      213: -4247221959188300534
+    second: spell_sprite_sheet_8
+  - first:
+      213: -1946795936543405774
+    second: spell_sprite_sheet_9
+  - first:
+      213: -5601613234703840784
+    second: spell_sprite_sheet_10
+  - first:
+      213: 1252217949931670055
+    second: spell_sprite_sheet_11
+  - first:
+      213: 2868816954587974467
+    second: spell_sprite_sheet_12
+  - first:
+      213: -7297796211151007089
+    second: spell_sprite_sheet_13
+  - first:
+      213: 8398729035009348983
+    second: spell_sprite_sheet_14
+  - first:
+      213: 4067205983317704769
+    second: spell_sprite_sheet_15
+  - first:
+      213: -8830399807846135311
+    second: spell_sprite_sheet_16
+  - first:
+      213: 2522401626140871369
+    second: spell_sprite_sheet_17
+  - first:
+      213: 8981036726951675829
+    second: spell_sprite_sheet_18
+  - first:
+      213: -5981988643552715718
+    second: spell_sprite_sheet_19
+  - first:
+      213: -5973825199182931121
+    second: spell_sprite_sheet_20
+  - first:
+      213: -108290511594441391
+    second: spell_sprite_sheet_21
+  - first:
+      213: -967768107882526231
+    second: spell_sprite_sheet_22
+  - first:
+      213: -5437262867602831724
+    second: spell_sprite_sheet_23
+  - first:
+      213: 1442888430858327836
+    second: spell_sprite_sheet_24
+  - first:
+      213: 9147575090166030006
+    second: spell_sprite_sheet_25
+  - first:
+      213: -6989834483971302306
+    second: spell_sprite_sheet_26
+  - first:
+      213: -6782302861792306546
+    second: spell_sprite_sheet_27
+  - first:
+      213: 549649544301074468
+    second: spell_sprite_sheet_28
+  - first:
+      213: -5832238248039878727
+    second: spell_sprite_sheet_29
+  - first:
+      213: -498386477731342673
+    second: spell_sprite_sheet_30
+  - first:
+      213: -3332022023818263126
+    second: spell_sprite_sheet_31
+  - first:
+      213: 3861370927414403460
+    second: spell_sprite_sheet_32
+  - first:
+      213: 5100395654270306574
+    second: spell_sprite_sheet_33
+  - first:
+      213: -8740009773897360719
+    second: spell_sprite_sheet_34
+  - first:
+      213: 4323370665584112404
+    second: spell_sprite_sheet_35
+  - first:
+      213: -905936460826002763
+    second: spell_sprite_sheet_36
+  - first:
+      213: -8658345593972299482
+    second: spell_sprite_sheet_37
+  - first:
+      213: 2293543332030714056
+    second: spell_sprite_sheet_38
+  - first:
+      213: 1249997755438464480
+    second: spell_sprite_sheet_39
+  - first:
+      213: 5639178007544209826
+    second: spell_sprite_sheet_40
+  - first:
+      213: -754136239362084256
+    second: spell_sprite_sheet_41
+  - first:
+      213: 2799114968825184338
+    second: spell_sprite_sheet_42
+  - first:
+      213: 3732771951437577749
+    second: spell_sprite_sheet_43
+  - first:
+      213: -7111963953004130552
+    second: spell_sprite_sheet_44
+  - first:
+      213: -6826819944567713993
+    second: spell_sprite_sheet_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: firebalstandard_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 277
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a41edf0da342744299b880497a40d8a
+      internalID: -693289042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firebalstandard_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 278
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f6c42e9cf268440a9233c8ad2079d5
+      internalID: -2101877970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 65dd89d261f0d7c44b3a6265c0c485f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      firebalstandard_0: -693289042
+      firebalstandard_1: -2101877970
+      spell_sprite_sheet 1_0: 446079837
+      spell_sprite_sheet 1_1: -1304738739
+      spell_sprite_sheet 1_2: 1850576295
+      spell_sprite_sheet_0: -4108031258863209694
+      spell_sprite_sheet_1: -8134507985932087382
+      spell_sprite_sheet_10: -5601613234703840784
+      spell_sprite_sheet_11: 1252217949931670055
+      spell_sprite_sheet_12: 2868816954587974467
+      spell_sprite_sheet_13: -7297796211151007089
+      spell_sprite_sheet_14: 8398729035009348983
+      spell_sprite_sheet_15: 4067205983317704769
+      spell_sprite_sheet_16: -8830399807846135311
+      spell_sprite_sheet_17: 2522401626140871369
+      spell_sprite_sheet_18: 8981036726951675829
+      spell_sprite_sheet_19: -5981988643552715718
+      spell_sprite_sheet_2: -3188021956528554412
+      spell_sprite_sheet_20: -5973825199182931121
+      spell_sprite_sheet_21: -108290511594441391
+      spell_sprite_sheet_22: -967768107882526231
+      spell_sprite_sheet_23: -5437262867602831724
+      spell_sprite_sheet_24: 1442888430858327836
+      spell_sprite_sheet_25: 9147575090166030006
+      spell_sprite_sheet_26: -6989834483971302306
+      spell_sprite_sheet_27: -6782302861792306546
+      spell_sprite_sheet_28: 549649544301074468
+      spell_sprite_sheet_29: -5832238248039878727
+      spell_sprite_sheet_3: -4549235383687268199
+      spell_sprite_sheet_30: -498386477731342673
+      spell_sprite_sheet_31: -3332022023818263126
+      spell_sprite_sheet_32: 3861370927414403460
+      spell_sprite_sheet_33: 5100395654270306574
+      spell_sprite_sheet_34: -8740009773897360719
+      spell_sprite_sheet_35: 4323370665584112404
+      spell_sprite_sheet_36: -905936460826002763
+      spell_sprite_sheet_37: -8658345593972299482
+      spell_sprite_sheet_38: 2293543332030714056
+      spell_sprite_sheet_39: 1249997755438464480
+      spell_sprite_sheet_4: 6400120251201409182
+      spell_sprite_sheet_40: 5639178007544209826
+      spell_sprite_sheet_41: -754136239362084256
+      spell_sprite_sheet_42: 2799114968825184338
+      spell_sprite_sheet_43: 3732771951437577749
+      spell_sprite_sheet_44: -7111963953004130552
+      spell_sprite_sheet_45: -6826819944567713993
+      spell_sprite_sheet_5: 1484071302942603704
+      spell_sprite_sheet_6: -7384712595899108209
+      spell_sprite_sheet_7: 5847084607363727513
+      spell_sprite_sheet_8: -4247221959188300534
+      spell_sprite_sheet_9: -1946795936543405774
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: b213c2efe80ea904fa253b149263325c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4108031258863209694
+    second: spell_sprite_sheet_0
+  - first:
+      213: -8134507985932087382
+    second: spell_sprite_sheet_1
+  - first:
+      213: -3188021956528554412
+    second: spell_sprite_sheet_2
+  - first:
+      213: -4549235383687268199
+    second: spell_sprite_sheet_3
+  - first:
+      213: 6400120251201409182
+    second: spell_sprite_sheet_4
+  - first:
+      213: 1484071302942603704
+    second: spell_sprite_sheet_5
+  - first:
+      213: -7384712595899108209
+    second: spell_sprite_sheet_6
+  - first:
+      213: 5847084607363727513
+    second: spell_sprite_sheet_7
+  - first:
+      213: -4247221959188300534
+    second: spell_sprite_sheet_8
+  - first:
+      213: -1946795936543405774
+    second: spell_sprite_sheet_9
+  - first:
+      213: -5601613234703840784
+    second: spell_sprite_sheet_10
+  - first:
+      213: 1252217949931670055
+    second: spell_sprite_sheet_11
+  - first:
+      213: 2868816954587974467
+    second: spell_sprite_sheet_12
+  - first:
+      213: -7297796211151007089
+    second: spell_sprite_sheet_13
+  - first:
+      213: 8398729035009348983
+    second: spell_sprite_sheet_14
+  - first:
+      213: 4067205983317704769
+    second: spell_sprite_sheet_15
+  - first:
+      213: -8830399807846135311
+    second: spell_sprite_sheet_16
+  - first:
+      213: 2522401626140871369
+    second: spell_sprite_sheet_17
+  - first:
+      213: 8981036726951675829
+    second: spell_sprite_sheet_18
+  - first:
+      213: -5981988643552715718
+    second: spell_sprite_sheet_19
+  - first:
+      213: -5973825199182931121
+    second: spell_sprite_sheet_20
+  - first:
+      213: -108290511594441391
+    second: spell_sprite_sheet_21
+  - first:
+      213: -967768107882526231
+    second: spell_sprite_sheet_22
+  - first:
+      213: -5437262867602831724
+    second: spell_sprite_sheet_23
+  - first:
+      213: 1442888430858327836
+    second: spell_sprite_sheet_24
+  - first:
+      213: 9147575090166030006
+    second: spell_sprite_sheet_25
+  - first:
+      213: -6989834483971302306
+    second: spell_sprite_sheet_26
+  - first:
+      213: -6782302861792306546
+    second: spell_sprite_sheet_27
+  - first:
+      213: 549649544301074468
+    second: spell_sprite_sheet_28
+  - first:
+      213: -5832238248039878727
+    second: spell_sprite_sheet_29
+  - first:
+      213: -498386477731342673
+    second: spell_sprite_sheet_30
+  - first:
+      213: -3332022023818263126
+    second: spell_sprite_sheet_31
+  - first:
+      213: 3861370927414403460
+    second: spell_sprite_sheet_32
+  - first:
+      213: 5100395654270306574
+    second: spell_sprite_sheet_33
+  - first:
+      213: -8740009773897360719
+    second: spell_sprite_sheet_34
+  - first:
+      213: 4323370665584112404
+    second: spell_sprite_sheet_35
+  - first:
+      213: -905936460826002763
+    second: spell_sprite_sheet_36
+  - first:
+      213: -8658345593972299482
+    second: spell_sprite_sheet_37
+  - first:
+      213: 2293543332030714056
+    second: spell_sprite_sheet_38
+  - first:
+      213: 1249997755438464480
+    second: spell_sprite_sheet_39
+  - first:
+      213: 5639178007544209826
+    second: spell_sprite_sheet_40
+  - first:
+      213: -754136239362084256
+    second: spell_sprite_sheet_41
+  - first:
+      213: 2799114968825184338
+    second: spell_sprite_sheet_42
+  - first:
+      213: 3732771951437577749
+    second: spell_sprite_sheet_43
+  - first:
+      213: -7111963953004130552
+    second: spell_sprite_sheet_44
+  - first:
+      213: -6826819944567713993
+    second: spell_sprite_sheet_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fierballslut_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 284
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd3b74126e40d74aa7be66b1c01bdee
+      internalID: -1533401137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fierballslut_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 280
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a0df4e5d6b53149a1dd647e2718b8e
+      internalID: 1284118845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fierballslut_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 269
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a86a12d92b210843b05e3b676883732
+      internalID: 1423341140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fierballslut_3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 255
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af0969a220565e4da4d8e87b7afff63
+      internalID: 705427815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fierballslut_4
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 230
+        width: 91
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0adae42534e30b4fa0931387830e5ae
+      internalID: -1148252305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fierballslut_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 187
+        width: 187
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0130ff63d21581843ab4dd1676aa0dc4
+      internalID: -1021083947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fierballslut_6
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 221
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3c710e350a8444985ab7e31e4c6ab1
+      internalID: 265703185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fierballslut_7
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 249
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ae02a022bfb1b4f936219a6d0eebef
+      internalID: -450231191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fierballslut_8
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 289
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a293bc6b1fff30e428fa1ce560901ad9
+      internalID: 851842743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 65dd89d261f0d7c44b3a6265c0c485f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fierballslut_0: -1533401137
+      fierballslut_1: 1284118845
+      fierballslut_2: 1423341140
+      fierballslut_3: 705427815
+      fierballslut_4: -1148252305
+      fierballslut_5: -1021083947
+      fierballslut_6: 265703185
+      fierballslut_7: -450231191
+      fierballslut_8: 851842743
+      firebalstandard_0: -693289042
+      firebalstandard_1: -2101877970
+      spell_sprite_sheet 1_0: 446079837
+      spell_sprite_sheet 1_1: -1304738739
+      spell_sprite_sheet 1_2: 1850576295
+      spell_sprite_sheet_0: -4108031258863209694
+      spell_sprite_sheet_1: -8134507985932087382
+      spell_sprite_sheet_10: -5601613234703840784
+      spell_sprite_sheet_11: 1252217949931670055
+      spell_sprite_sheet_12: 2868816954587974467
+      spell_sprite_sheet_13: -7297796211151007089
+      spell_sprite_sheet_14: 8398729035009348983
+      spell_sprite_sheet_15: 4067205983317704769
+      spell_sprite_sheet_16: -8830399807846135311
+      spell_sprite_sheet_17: 2522401626140871369
+      spell_sprite_sheet_18: 8981036726951675829
+      spell_sprite_sheet_19: -5981988643552715718
+      spell_sprite_sheet_2: -3188021956528554412
+      spell_sprite_sheet_20: -5973825199182931121
+      spell_sprite_sheet_21: -108290511594441391
+      spell_sprite_sheet_22: -967768107882526231
+      spell_sprite_sheet_23: -5437262867602831724
+      spell_sprite_sheet_24: 1442888430858327836
+      spell_sprite_sheet_25: 9147575090166030006
+      spell_sprite_sheet_26: -6989834483971302306
+      spell_sprite_sheet_27: -6782302861792306546
+      spell_sprite_sheet_28: 549649544301074468
+      spell_sprite_sheet_29: -5832238248039878727
+      spell_sprite_sheet_3: -4549235383687268199
+      spell_sprite_sheet_30: -498386477731342673
+      spell_sprite_sheet_31: -3332022023818263126
+      spell_sprite_sheet_32: 3861370927414403460
+      spell_sprite_sheet_33: 5100395654270306574
+      spell_sprite_sheet_34: -8740009773897360719
+      spell_sprite_sheet_35: 4323370665584112404
+      spell_sprite_sheet_36: -905936460826002763
+      spell_sprite_sheet_37: -8658345593972299482
+      spell_sprite_sheet_38: 2293543332030714056
+      spell_sprite_sheet_39: 1249997755438464480
+      spell_sprite_sheet_4: 6400120251201409182
+      spell_sprite_sheet_40: 5639178007544209826
+      spell_sprite_sheet_41: -754136239362084256
+      spell_sprite_sheet_42: 2799114968825184338
+      spell_sprite_sheet_43: 3732771951437577749
+      spell_sprite_sheet_44: -7111963953004130552
+      spell_sprite_sheet_45: -6826819944567713993
+      spell_sprite_sheet_5: 1484071302942603704
+      spell_sprite_sheet_6: -7384712595899108209
+      spell_sprite_sheet_7: 5847084607363727513
+      spell_sprite_sheet_8: -4247221959188300534
+      spell_sprite_sheet_9: -1946795936543405774
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

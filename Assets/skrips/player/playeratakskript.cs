@@ -18,6 +18,7 @@ public class playeratakskript : MonoBehaviour
     public Animator animator;
     public static bool slår = false;
     public static GameObject playerObjekt;
+    
 
 
     [SerializeField] public LayerMask finede;
@@ -100,6 +101,13 @@ public class playeratakskript : MonoBehaviour
         Sanimator.SetBool("går", false);
         playerObjekt.GetComponent<playeratakskript>().StartKastAnimation(magikball, Origen);
 
+    }
+
+    public static void fireBallattak(GameObject fireBall, GameObject Origen)
+    {
+        Sanimator.SetBool("går", false);
+        
+        playerObjekt.GetComponent<playeratakskript>().StartKastAnimation(fireBall, Origen);
     }
     
 
@@ -234,7 +242,7 @@ public class playeratakskript : MonoBehaviour
             yield return null;
         }
 
-
+        
         kastCoroutine = null;
     }
 
