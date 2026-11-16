@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: be878ae5fef6fbc4f9f84abd516a1fab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7675707369431454789
+    second: goblin_enemy_0
+  - first:
+      213: 6456979598402715480
+    second: goblin_enemy_1
+  - first:
+      213: 1170544443459403119
+    second: goblin_enemy_2
+  - first:
+      213: 1673869581715332692
+    second: goblin_enemy_3
+  - first:
+      213: 961516743550073183
+    second: goblin_enemy_4
+  - first:
+      213: 2205432248254219982
+    second: goblin_enemy_5
+  - first:
+      213: 5527111501413295714
+    second: goblin_enemy_6
+  - first:
+      213: -4473623427522392923
+    second: goblin_enemy_7
+  - first:
+      213: -2457826157788491118
+    second: goblin_enemy_8
+  - first:
+      213: 2359001342600862964
+    second: goblin_enemy_9
+  - first:
+      213: 3904887107410061919
+    second: goblin_enemy_10
+  - first:
+      213: 3098427928144456447
+    second: goblin_enemy_11
+  - first:
+      213: -6414768349907786436
+    second: goblin_enemy_12
+  - first:
+      213: -3753009950182317986
+    second: goblin_enemy_13
+  - first:
+      213: -8947180974926294353
+    second: goblin_enemy_14
+  - first:
+      213: -73692038723815477
+    second: goblin_enemy_15
+  - first:
+      213: 1380008763501657560
+    second: goblin_enemy_16
+  - first:
+      213: 9195145949765316930
+    second: goblin_enemy_17
+  - first:
+      213: -5393955171755085246
+    second: goblin_enemy_18
+  - first:
+      213: 1915548814374729924
+    second: goblin_enemy_19
+  - first:
+      213: -1561428999257588991
+    second: goblin_enemy_20
+  - first:
+      213: -6052814246981548506
+    second: goblin_enemy_21
+  - first:
+      213: 4230108283949302305
+    second: goblin_enemy_22
+  - first:
+      213: 6089404650744602163
+    second: goblin_enemy_23
+  - first:
+      213: 2479341034801001503
+    second: goblin_enemy_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: goblin_enemy_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 126
+        width: 30
+        height: 20
+      alignment: 9
+      pivot: {x: 0.52907294, y: 0.946006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bf1451990b45ae0800000000000000
+      internalID: -1561428999257588991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_enemy_21
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 77
+        width: 30
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5197645, y: 0.9427095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626cd35f285100ca0800000000000000
+      internalID: -6052814246981548506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_enemy_24
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 28
+        width: 30
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5221204, y: 0.94844145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14fc58f883686220800000000000000
+      internalID: 2479341034801001503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e5220e327e9a8f047b23f723d399771b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      goblin_enemy_0: -7675707369431454789
+      goblin_enemy_1: 6456979598402715480
+      goblin_enemy_10: 3904887107410061919
+      goblin_enemy_11: 3098427928144456447
+      goblin_enemy_12: -6414768349907786436
+      goblin_enemy_13: -3753009950182317986
+      goblin_enemy_14: -8947180974926294353
+      goblin_enemy_15: -73692038723815477
+      goblin_enemy_16: 1380008763501657560
+      goblin_enemy_17: 9195145949765316930
+      goblin_enemy_18: -5393955171755085246
+      goblin_enemy_19: 1915548814374729924
+      goblin_enemy_2: 1170544443459403119
+      goblin_enemy_20: -1561428999257588991
+      goblin_enemy_21: -6052814246981548506
+      goblin_enemy_22: 4230108283949302305
+      goblin_enemy_23: 6089404650744602163
+      goblin_enemy_24: 2479341034801001503
+      goblin_enemy_3: 1673869581715332692
+      goblin_enemy_4: 961516743550073183
+      goblin_enemy_5: 2205432248254219982
+      goblin_enemy_6: 5527111501413295714
+      goblin_enemy_7: -4473623427522392923
+      goblin_enemy_8: -2457826157788491118
+      goblin_enemy_9: 2359001342600862964
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

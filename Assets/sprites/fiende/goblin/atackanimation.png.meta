@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: 89f0f70c4afaf7f459812401a2a8c861
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7675707369431454789
+    second: goblin_enemy_0
+  - first:
+      213: 6456979598402715480
+    second: goblin_enemy_1
+  - first:
+      213: 1170544443459403119
+    second: goblin_enemy_2
+  - first:
+      213: 1673869581715332692
+    second: goblin_enemy_3
+  - first:
+      213: 961516743550073183
+    second: goblin_enemy_4
+  - first:
+      213: 2205432248254219982
+    second: goblin_enemy_5
+  - first:
+      213: 5527111501413295714
+    second: goblin_enemy_6
+  - first:
+      213: -4473623427522392923
+    second: goblin_enemy_7
+  - first:
+      213: -2457826157788491118
+    second: goblin_enemy_8
+  - first:
+      213: 2359001342600862964
+    second: goblin_enemy_9
+  - first:
+      213: 3904887107410061919
+    second: goblin_enemy_10
+  - first:
+      213: 3098427928144456447
+    second: goblin_enemy_11
+  - first:
+      213: -6414768349907786436
+    second: goblin_enemy_12
+  - first:
+      213: -3753009950182317986
+    second: goblin_enemy_13
+  - first:
+      213: -8947180974926294353
+    second: goblin_enemy_14
+  - first:
+      213: -73692038723815477
+    second: goblin_enemy_15
+  - first:
+      213: 1380008763501657560
+    second: goblin_enemy_16
+  - first:
+      213: 9195145949765316930
+    second: goblin_enemy_17
+  - first:
+      213: -5393955171755085246
+    second: goblin_enemy_18
+  - first:
+      213: 1915548814374729924
+    second: goblin_enemy_19
+  - first:
+      213: -1561428999257588991
+    second: goblin_enemy_20
+  - first:
+      213: -6052814246981548506
+    second: goblin_enemy_21
+  - first:
+      213: 4230108283949302305
+    second: goblin_enemy_22
+  - first:
+      213: 6089404650744602163
+    second: goblin_enemy_23
+  - first:
+      213: 2479341034801001503
+    second: goblin_enemy_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atackanimation_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 125
+        width: 34
+        height: 33
+      alignment: 9
+      pivot: {x: 0.46324673, y: 0.60058457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e410ada7631d9048a3cd387e3c61601
+      internalID: 433094505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atackanimation_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 126
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.43740973, y: 0.5191214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a35b4d5e59d3a45b3bc4f0f2ff0b6a
+      internalID: 1945957184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atackanimation_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 126
+        width: 37
+        height: 41
+      alignment: 9
+      pivot: {x: 0.43117213, y: 0.4592382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d488f7c87f56d43adc13f1205e98bf
+      internalID: 73213784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atackanimation_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 126
+        width: 40
+        height: 50
+      alignment: 9
+      pivot: {x: 0.3912384, y: 0.37194824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91566813cb46634c8efb442b6ee8dbc
+      internalID: -1627261322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atackanimation_4
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 126
+        width: 39
+        height: 68
+      alignment: 9
+      pivot: {x: 0.4004313, y: 0.2772136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cff04ef15816448881eaa9aa062469
+      internalID: -1833280016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atackanimation_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 126
+        width: 36
+        height: 68
+      alignment: 9
+      pivot: {x: 0.43268162, y: 0.2748211}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b1c583c0ab6f74bbcbfd25f031353b
+      internalID: -12918599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atackanimation_6
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 125
+        width: 39
+        height: 48
+      alignment: 9
+      pivot: {x: 0.40694016, y: 0.41041946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42743840b07fb2a4caff46cb92b04eaa
+      internalID: -377663782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atackanimation_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 125
+        width: 35
+        height: 39
+      alignment: 9
+      pivot: {x: 0.4462594, y: 0.5049376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d1a2b0fbe2dbb44837843d185768c4
+      internalID: -295744646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e5220e327e9a8f047b23f723d399771b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      atackanimation_0: 433094505
+      atackanimation_1: 1945957184
+      atackanimation_2: 73213784
+      atackanimation_3: -1627261322
+      atackanimation_4: -1833280016
+      atackanimation_5: -12918599
+      atackanimation_6: -377663782
+      atackanimation_7: -295744646
+      goblin_enemy_0: -7675707369431454789
+      goblin_enemy_1: 6456979598402715480
+      goblin_enemy_10: 3904887107410061919
+      goblin_enemy_11: 3098427928144456447
+      goblin_enemy_12: -6414768349907786436
+      goblin_enemy_13: -3753009950182317986
+      goblin_enemy_14: -8947180974926294353
+      goblin_enemy_15: -73692038723815477
+      goblin_enemy_16: 1380008763501657560
+      goblin_enemy_17: 9195145949765316930
+      goblin_enemy_18: -5393955171755085246
+      goblin_enemy_19: 1915548814374729924
+      goblin_enemy_2: 1170544443459403119
+      goblin_enemy_20: -1561428999257588991
+      goblin_enemy_21: -6052814246981548506
+      goblin_enemy_22: 4230108283949302305
+      goblin_enemy_23: 6089404650744602163
+      goblin_enemy_24: 2479341034801001503
+      goblin_enemy_3: 1673869581715332692
+      goblin_enemy_4: 961516743550073183
+      goblin_enemy_5: 2205432248254219982
+      goblin_enemy_6: 5527111501413295714
+      goblin_enemy_7: -4473623427522392923
+      goblin_enemy_8: -2457826157788491118
+      goblin_enemy_9: 2359001342600862964
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
