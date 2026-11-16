@@ -38,22 +38,22 @@ private void Awake()
             {
                 finde.GetComponent<FiendeAi>().health -= damage;
             }
-            
-            
-        }
-        animator.Play("slut", 0, 0f);
-        yield return null;
-        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("slut"))
-        {
-            
+            animator.Play("slut", 0, 0f);
             yield return null;
-        }
-        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
-        {
-            
-            yield return null; 
+            while (!animator.GetCurrentAnimatorStateInfo(0).IsName("slut"))
+            {
+
+                yield return null;
+            }
+            while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+            {
+
+                yield return null;
+            }
+
+            Destroy(gameObject);
+
         }
         
-        Destroy(gameObject);
     }
 }
