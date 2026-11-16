@@ -7,9 +7,11 @@ public class fireballskript : MonoBehaviour
     Rigidbody2D rb;
     GameObject finde;
     [SerializeField] private int speed = 7;
-    [SerializeField] private float damage = 5f;
+     private float damage = 75f;
     [SerializeField] public Animator animator;
     private bool destrying = false;
+    private Vector2 postition;
+    private float explotionRaduse = 1.5f;
 
 
     private void Awake()
@@ -21,6 +23,7 @@ public class fireballskript : MonoBehaviour
 
     private void Update()
     {
+        postition = gameObject.transform.position;
         if (destrying == false)
         {
             rb.linearVelocity = direktion * speed;
@@ -31,14 +34,37 @@ public class fireballskript : MonoBehaviour
 
     private IEnumerator OnCollisionEnter2D(Collision2D collision)
     {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            postition,
+            explotionRaduse);
         finde = collision.gameObject;
         if (finde.tag != "Player")
         {
             destrying = true;
+            foreach (Collider2D hit in hits)
+            {
+                try
+                {
+                    hit.GetComponent<FiendeAi>().health -= damage;
+                }
+                catch
+                {
+                    
+                }
+                try
+                {
+                    hit.GetComponent<movment>().health -= damage;
+                }
+                catch
+                {
 
-            animator.Play("slut", 0, 0f);
+                }
+            }
+            
+
+            animator.Play("fierbalslut", 0, 0f);
             yield return null;
-            while (!animator.GetCurrentAnimatorStateInfo(0).IsName("slut"))
+            while (!animator.GetCurrentAnimatorStateInfo(0).IsName("fierbalslut"))
             {
 
                 yield return null;
