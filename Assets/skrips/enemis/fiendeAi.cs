@@ -6,11 +6,12 @@ public class FiendeAi : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private LayerMask Player;
     [SerializeField] private LayerMask notEnemy;
-    [SerializeField] public float attackRange = 2.5f;
+    [SerializeField] public float attackRange = 1.5f;
     [SerializeField] private int momentSped = 2;
     [SerializeField] public static float damage = 20f;
-    [SerializeField] public float health = 100f;
+    
     [SerializeField] public Animator animator;
+    
 
     private bool conterstated = false;
     private bool rethtplayer = false;
@@ -20,17 +21,14 @@ public class FiendeAi : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
     {
-       if (health<= 0f)
-        {
-            gameObject.SetActive(false);
-        }
 
-        // Kollar allt inom cirkeln runt fienden
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, circleRadius, Player);
+            // Kollar allt inom cirkeln runt fienden
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, circleRadius, Player);
 
         if (hit != null)
         {
@@ -112,10 +110,11 @@ public class FiendeAi : MonoBehaviour
             yield return null;
         }
         animator.Play("idol", 0, 0f);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
 
         conterstated = false;
     }
+
 
     // Ritar BARA EN cirkel i Scene-vyn
     void OnDrawGizmosSelected()

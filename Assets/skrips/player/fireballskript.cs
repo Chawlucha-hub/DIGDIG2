@@ -45,7 +45,7 @@ public class fireballskript : MonoBehaviour
             {
                 try
                 {
-                    hit.GetComponent<FiendeAi>().health -= damage;
+                    hit.GetComponent<damegdoer>().health -= damage;
                 }
                 catch
                 {

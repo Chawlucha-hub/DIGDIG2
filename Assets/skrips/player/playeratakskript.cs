@@ -82,11 +82,11 @@ public class playeratakskript : MonoBehaviour
 
         for (int i = 0; i < fiender.Count; i++)
         {
-            FiendeAi fiendeAi = fiender[i].GetComponent<FiendeAi>();
+            damegdoer damegdoer = fiender[i].GetComponent<damegdoer>();
 
-            if (fiendeAi != null)
+            if (damegdoer != null)
             {
-                fiendeAi.health -= damage;
+                damegdoer.health -= damage;
             }
             else
             {

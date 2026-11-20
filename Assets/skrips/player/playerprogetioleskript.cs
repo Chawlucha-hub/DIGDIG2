@@ -36,7 +36,7 @@ private void Awake()
         if (finde.tag != "Player") {
             if (finde.layer == 6)
             {
-                finde.GetComponent<FiendeAi>().health -= damage;
+                finde.GetComponent<damegdoer>().health -= damage;
             }
             animator.Play("slut", 0, 0f);
             yield return null;
